@@ -1,0 +1,19 @@
+23:31:56 **** Incremental Build of configuration Debug for project TIM_Interrupt ****
+make -j8 all 
+arm-none-eabi-gcc -o "TIM_Interrupt.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\yuhyun97\STM32CubeIDE\workspace_1.13.0\TIM_Interrupt\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM_Interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM_Interrupt.elf
+ 
+arm-none-eabi-size   TIM_Interrupt.elf 
+arm-none-eabi-objdump -h -S  TIM_Interrupt.elf  > "TIM_Interrupt.list"
+arm-none-eabi-objcopy  -O ihex  TIM_Interrupt.elf  "TIM_Interrupt.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8580	     20	   1644	  10244	   2804	TIM_Interrupt.elf
+arm-none-eabi-objcopy  -O binary  TIM_Interrupt.elf  "TIM_Interrupt.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIM_Interrupt.list
+Finished building: TIM_Interrupt.hex
+Finished building: TIM_Interrupt.bin
+ 
+ 
+ 
