@@ -1,19 +1,20 @@
-23:31:56 **** Incremental Build of configuration Debug for project TIM_Interrupt ****
+21:59:04 **** Incremental Build of configuration Debug for project PWM_test ****
 make -j8 all 
-arm-none-eabi-gcc -o "TIM_Interrupt.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\yuhyun97\STM32CubeIDE\workspace_1.13.0\TIM_Interrupt\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM_Interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: TIM_Interrupt.elf
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc -o "PWM_test.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\yuhyun97\STM32CubeIDE\workspace_1.13.0\PWM_test\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_test.elf
  
-arm-none-eabi-size   TIM_Interrupt.elf 
-arm-none-eabi-objdump -h -S  TIM_Interrupt.elf  > "TIM_Interrupt.list"
-arm-none-eabi-objcopy  -O ihex  TIM_Interrupt.elf  "TIM_Interrupt.hex"
+arm-none-eabi-size   PWM_test.elf 
+arm-none-eabi-objdump -h -S  PWM_test.elf  > "PWM_test.list"
+arm-none-eabi-objcopy  -O ihex  PWM_test.elf  "PWM_test.hex"
+arm-none-eabi-objcopy  -O binary  PWM_test.elf  "PWM_test.bin"
    text	   data	    bss	    dec	    hex	filename
-   8580	     20	   1644	  10244	   2804	TIM_Interrupt.elf
-arm-none-eabi-objcopy  -O binary  TIM_Interrupt.elf  "TIM_Interrupt.bin"
+   8332	     20	   1644	   9996	   270c	PWM_test.elf
 Finished building: default.size.stdout
  
-Finished building: TIM_Interrupt.list
-Finished building: TIM_Interrupt.hex
-Finished building: TIM_Interrupt.bin
+Finished building: PWM_test.hex
+Finished building: PWM_test.bin
  
  
+Finished building: PWM_test.list
  
