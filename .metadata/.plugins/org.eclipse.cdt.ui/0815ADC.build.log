@@ -1,0 +1,22 @@
+22:15:00 **** Incremental Build of configuration Debug for project 0815ADC ****
+make -j8 all 
+arm-none-eabi-gcc -o "0815ADC.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\yuhyun97\STM32CubeIDE\workspace_1.13.0\0815ADC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0815ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 0815ADC.elf
+ 
+arm-none-eabi-size   0815ADC.elf 
+arm-none-eabi-objdump -h -S  0815ADC.elf  > "0815ADC.list"
+arm-none-eabi-objcopy  -O ihex  0815ADC.elf  "0815ADC.hex"
+   text	   data	    bss	    dec	    hex	filename
+  12456	     20	   1756	  14232	   3798	0815ADC.elf
+arm-none-eabi-objcopy  -O binary  0815ADC.elf  "0815ADC.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 0815ADC.hex
+Finished building: 0815ADC.bin
+ 
+ 
+Finished building: 0815ADC.list
+ 
+
+22:15:01 Build Finished. 0 errors, 0 warnings. (took 1s.43ms)
+
