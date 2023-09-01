@@ -32,7 +32,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define TRIG_PIN GPIO_PIN_9
+#define TRIG_PIN GPIO_PIN_5
 #define TRIG_PORT GPIOA
 
 uint32_t IC_Val1 = 0;

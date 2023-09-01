@@ -193,3 +193,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-09-01 20:00:58.592
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 2 2 2023-09-01 21:44:46.912
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-09-01 21:44:46.912
+!MESSAGE The project description file (.project) for 'ADC' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-09-01 21:44:46.912
+!MESSAGE The project description file (.project) for 'ADC_test' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-09-01 21:44:46.912
+!MESSAGE The project description file (.project) for 'UART' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
