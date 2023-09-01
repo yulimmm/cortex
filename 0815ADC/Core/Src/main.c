@@ -106,12 +106,12 @@ int main(void)
   while (1)
   {
 	  uint16_t step;
-	  HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-	  step = HAL_ADC_GetValue(&hadc1);
-	  step=step*8;
+	  HAL_ADC_Start(&hadc1); //ADC 동작 시작
+	  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY); //ADC변환이 완료될 때까지 기다리기
+	  step = HAL_ADC_GetValue(&hadc1); //ADC 변환 값을 반환
+	  step=step*8; //변화를 크게 보기 위해 8을 곱함
 
-	  __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_1,step);
+	  __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_1,step); //PWM 제어
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
